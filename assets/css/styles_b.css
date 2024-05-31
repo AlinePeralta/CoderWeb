@@ -9,4 +9,32 @@
 body{
     font-family: "Bai Jamjuree", sans-serif; 
 }
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
 
+.bg-brand{
+    background-color: #ffa000;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.navbar-nav .nav-item{
+justify-items: flex-start;
+padding-left: 15px;
+padding-right: 15px;
+font-size: 18px;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.dropdown-menu{
+    background-color: #FF6969;
+    border: 0;
+}
+.dropdown-menu li a:hover{
+    background-color: #ffa000;
+    border: 0;
+}
