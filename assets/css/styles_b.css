@@ -45,7 +45,7 @@ font-size: 18px;
     align-content: end;
 }
 .bg-gris{
-    background-color: #ebebeb; 
+    background-color: #fffdf7; 
 }
 .titulo{
     font-size: 100px;
@@ -53,19 +53,25 @@ font-size: 18px;
 }
 
 .titulo_pages{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 800;
+    color: #FF6969;
 }
 .subtitulo{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .img-header{
     width: 650px;
 }
 
+.head_inicio{
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
 .content-center p{
-   font-size: 30px;
+   font-size: 24px;
 }
 .content-center{
     padding: 140px;
@@ -93,4 +99,12 @@ font-size: 18px;
 }
 .carruselSobremi{
     padding-bottom: 200px;
+}
+.card{
+    background-color: #FF6969;
+    border: 0;
+    color: #fff;
+}
+.card a{
+   color: #fff;
 }
