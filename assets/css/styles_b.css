@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 
 body{
@@ -26,7 +27,7 @@ padding-right: 15px;
 font-size: 18px;
 }
 
-.logo img{
+.logo{
     width: 80px;
 }
 
@@ -37,4 +38,59 @@ font-size: 18px;
 .dropdown-menu li a:hover{
     background-color: #ffa000;
     border: 0;
+}
+
+.head{
+    height: 1200px;
+    align-content: end;
+}
+.bg-gris{
+    background-color: #ebebeb; 
+}
+.titulo{
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.titulo_pages{
+    font-size: 70px;
+    font-weight: 800;
+}
+.subtitulo{
+    font-size: 50px;
+}
+
+.img-header{
+    width: 650px;
+}
+
+.content-center p{
+   font-size: 30px;
+}
+.content-center{
+    padding: 140px;
+
+}
+.footer{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: #ffff;
+}
+
+.logoFooter{
+    width: 200px;
+}
+.socialmedia img{
+    width: 30px;
+}
+
+.img-carrusel{
+    width:20%;
+}
+.carousel-control-next, .carousel-control-prev{
+   background-color:  #FF6969;
+}
+.carruselSobremi{
+    padding-bottom: 200px;
 }
