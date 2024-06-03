@@ -79,14 +79,14 @@ font-size: 18px;
     padding: 140px;
 
 }
-.footer{
+.footer {
     background-color: black;
     padding: 20px;
     text-align: center;
     color: #ffff;
 }
 
-.logoFooter{
+.logofooter {
     width: 200px;
 }
 .socialmedia img{
@@ -155,4 +155,36 @@ font-size: 18px;
 
 .img-servicios-portafolio2{
     width: 60%;
+}
+
+@media (max-width: 1199.98px){
+    .content-center{
+        padding: 20px;
+    }    
+    .img-header{
+        width: 450px;
+    }
+  
+}
+
+@media (max-width: 767.98px) {
+ 
+
+    .titulo{
+        font-size: 60px;
+    }
+
+    .img-header{
+        width: 360px;
+        padding-bottom: 80px;
+    }
+
+    .service {
+        width: 100%;
+        border: 0;
+        text-align: center;
+    }
+    .form-contact{
+        padding: 80px;
+    }
 }
