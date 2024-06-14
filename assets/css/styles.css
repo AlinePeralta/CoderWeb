@@ -132,6 +132,7 @@ body {
 .socialmedia li {
   display: inline;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .card-title {
