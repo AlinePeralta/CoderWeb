@@ -116,6 +116,7 @@ body {
   padding: 10px;
   text-align: center;
   color: #fff;
+  flex-shrink: 0;
 }
 
 .logofooter {
