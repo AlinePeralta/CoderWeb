@@ -50,7 +50,10 @@ body{
 }
 
 
-
+.figmaux{
+    width: 80px!important;
+    height: 900px!important;
+}
 .logo {
     width: 80px;
 }
@@ -164,8 +167,9 @@ body{
     font-weight: 600;
 }
 
-.img-carrusel {
-    width: 20%;
+.img-carrusel-rrss {
+    width: 54%;
+    max-width: 50%;
 }
 
 .carousel-control-next,
@@ -241,28 +245,8 @@ body{
     margin-bottom: 5px;
 }
 
-.progress-bar {
-    position: relative;
-    height: 10px;
-    background-color: #000;
-}
 
-.progress {
-    height: 100%;
-    background-color: #000;
-    position: relative;
-}
 
-.progress-text {
-    position: absolute;
-    top: -25px;
-    right: 0;
-    background-color: #000;
-    color: #fff;
-    padding: 3px 6px;
-    font-size: 14px;
-    border-radius: 5px;
-}
 
 .flibbook{
     padding: 50px!important; 
