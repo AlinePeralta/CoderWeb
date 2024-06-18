@@ -37,6 +37,15 @@ body {
   color: #fff;
 }
 
+.img {
+  width: 30% !important;
+}
+
+.figmaux {
+  width: 80px !important;
+  height: 900px !important;
+}
+
 .logo {
   width: 80px;
 }
@@ -80,7 +89,7 @@ body {
   font-size: 100px;
   font-weight: 800;
   color: transparent;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 2px #000;
 }
 
 .subtitulo {
@@ -100,7 +109,7 @@ body {
 .head_inicio {
   padding-bottom: 100px;
   padding-top: 20px;
-  color: #fff;
+  color: #000;
   align-items: center;
 }
 
@@ -140,10 +149,6 @@ body {
 .card-title {
   color: #FF6969;
   font-weight: 600;
-}
-
-.img-carrusel {
-  width: 20%;
 }
 
 .carousel-control-next,
@@ -211,29 +216,6 @@ body {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
-}
-
-.progress-bar {
-  position: relative;
-  height: 10px;
-  background-color: #000;
-}
-
-.progress {
-  height: 100%;
-  background-color: #000;
-  position: relative;
-}
-
-.progress-text {
-  position: absolute;
-  top: -25px;
-  right: 0;
-  background-color: #000;
-  color: #fff;
-  padding: 3px 6px;
-  font-size: 14px;
-  border-radius: 5px;
 }
 
 .flibbook {
