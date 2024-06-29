@@ -1,19 +1,35 @@
-// Style CoderWeb Proyecto Entrega 3 16-06-24
+// Style CoderWeb Proyecto Entrega Final 28-06-24
 // Variables
 
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Jacquard+12+Charted&display=swap');
 
+// Mixins
+@mixin responsive($breakpoint) {
+    @if $breakpoint == lg {
+        @media (max-width: 1200px) { @content; }
+    } @else if $breakpoint == md {
+        @media (max-width: 991.98px) { @content; }
+    } @else if $breakpoint == sm {
+        @media (max-width: 767.98px) { @content; }
+    } @else if $breakpoint == xs {
+        @media (max-width: 575.98px) { @content; }
+    }
+}
 
+
+// Global styles
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Bai Jamjuree", sans-serif; 
 }
+
+// Navbar
 .navbar-expand-lg {
     .navbar-collapse {
         justify-content: flex-end;
@@ -35,30 +51,30 @@ body{
         padding-right: 15px;
         font-size: 18px;
         font-weight: 600;
-       
     }
 }
 
-.nav-item a{
-    &:hover{
+.nav-item a {
+    &:hover {
         color: $blanco;
     }  
-   
 }
 
+// Images
 .img {
     width: 50%;
-  
 }
 
-.figmaux{
+.figmaux {
     width: 80px;
     height: 900px;
 }
+
 .logo {
     width: 80px;
 }
 
+// Dropdown menu
 .dropdown-menu {
     background-color: $secundario;
     border: 0;
@@ -69,11 +85,13 @@ body{
     }
 }
 
+// Head section
 .head {
     height: 1200px;
     align-content: end;
 }
-.bg-home{
+
+.bg-home {
     background-image: linear-gradient(135deg, transparent 45%, $principal-hover 45%, $principal-hover 55%, transparent 0);
     background-size: 5px 5px;
     background-color: $principal;
@@ -83,15 +101,24 @@ body{
     background-color: $bg-fondo;
 }
 
+// Titles and text
 .titulo {
     font-size: 100px;
     font-weight: 800;
+
+    @include responsive(sm) {
+        font-size: 60px;
+    }
 }
 
 .titulo_pages {
     font-size: 50px;
     font-weight: 800;
     color: $secundario;
+    @include responsive(sm) {
+        font-size: 45px;
+        text-align: center;
+    }
 }
 
 .text-outline {
@@ -99,33 +126,68 @@ body{
     font-weight: 800;
     color: transparent; 
     -webkit-text-stroke: 2px $blak; 
-   
+    @include responsive(sm) {
+        font-size: 80px;
+       text-align: center;
 }
 
+}
 .subtitulo {
     font-size: 40px;
+    @include responsive(sm) {
+       text-align: center;
 }
-
+}
 .img-header {
     width: 550px;   
     padding-top: 10px;
     cursor: pointer;
-    transition: transform 300ms ease-in-out;
+    transition:(transform 300ms ease-in-out);
+
     &:hover {
         transform: translate3d(10px, 10px, 0px) rotateX(-5deg) rotateY(-5deg);
     }
+
+    @include responsive(lg) {
+        width: 450px;
+    }
+
+    @include responsive(sm) {
+
+        padding-bottom: 80px;
+        padding-left: 45px;
   
+    }
+}
+.años-e{
+    font-size: 14rem;
+    color: $secundario;
+    @include responsive(sm) {
+        font-size: 8rem;
+
+    }
+}
+.años-text{
+    font-size:3rem;
+    margin-top: -40px;
+    line-height: .9; 
+    color: $principal;
+    @include responsive(sm) {
+        font-size: 2rem;
+        line-height: 1; 
+    }
 }
 
 
-
-
-
+// Content and footer
 .head_inicio {
     padding-bottom: 100px;
     padding-top: 20px;
     color: $blak;
     align-items: center;
+    @include responsive(sm){
+        margin-top: -70px;
+    }
 }
 
 .content-center {
@@ -133,9 +195,16 @@ body{
 
     p {
         font-size: 20px;
+        @include responsive(sm) {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    @include responsive(lg) {
+        padding: 20px;
     }
 }
-
 
 .footer {
     background-color: $blak;
@@ -163,39 +232,84 @@ body{
     cursor: pointer;
 }
 
-.card-title {
-    color: $secundario;
-    font-weight: 600;
-}
-
-
-.carousel-control-next,
-.carousel-control-prev {
-    background-color: $secundario;
-}
-
 .bottomxl {
     padding-bottom: 170px;
 }
 
-.service {
-    width: 300px;
-    border: 0;
-}
-
+// Cards
 .card {
+    border-radius: 15px;
+    border: 0 solid;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.1);
+    cursor: pointer;
+    background-color: transparent;
+ transition:(transform 0.3s ease-in-out);
+ @include responsive(sm) {
+   padding: 20px;
+   margin-bottom: 20px;
+   width: 90%;
+   margin: auto;
+}
     a {
+        color: $blanco;
+    }
+
+    &.cursos1:hover {
+        border: 2px $secundario solid;
+        transform: scale(1.05);
+    }
+
+    &.servicio1:hover{
+        transform: scale(1.05);   
+        background-color: $sec1;
+        color: $blanco;
+    }
+    &.servicio2:hover{
+        transform: scale(1.05);   
+        background-color: $sec2;
+        color: $blanco;
+    }
+
+    &.servicio3:hover{
+        transform: scale(1.05);   
+        background-color: $sec3;
+        color: $blanco;
+    }
+    &.servicio4:hover{
+        transform: scale(1.05);   
+        background-color: $sec4;
         color: $blanco;
     }
 }
 
+.card-body {
+    .fecha {
+        font-size: 16px;
+    }
+}
+
+.logos-cursos {
+    width: 70%;
+    @include responsive(sm) {
+        width: 40%;
+    }
+}
+
+.coderlogo {
+    width: 12%;
+}
+
 .img-servicios {
-    width: 36%;
-    padding-bottom: 10px;
+    width: 50%;
+    padding-bottom: 4px;
 }
 
 .form-contact {
     padding: 0 80px 0 0;
+
+    @include responsive(sm) {
+        padding: 80px;
+    }
 }
 
 .datos_contacto {
@@ -231,6 +345,10 @@ body{
     width: 60%;
 }
 
+.texto {
+    color: $secundario;
+    font-weight: 600;
+}
 
 .skill {
     margin-bottom: 20px;
@@ -242,42 +360,18 @@ body{
     margin-bottom: 5px;
 }
 
+::selection {
+    background: $principal;
+    color: black;
+}
 
+::-moz-selection {
+    background: $principal;
+    color: black;
+}
 
-
-.flibbook{
+.flibbook {
     padding: 50px; 
     width: 100%; 
     height: 600px; 
-}
-
-@media (max-width: 1199.98px) {
-    .content-center {
-        padding: 20px;
-    }
-
-    .img-header {
-        width: 450px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .titulo {
-        font-size: 60px;
-    }
-
-    .img-header {
-        width: 360px;
-        padding-bottom: 80px;
-    }
-
-    .service {
-        width: 100%;
-        border: 0;
-        text-align: center;
-    }
-
-    .form-contact {
-        padding: 80px;
-    }
 }
