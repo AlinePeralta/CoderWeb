@@ -51,6 +51,9 @@ body {
         padding-right: 15px;
         font-size: 18px;
         font-weight: 600;
+        @include responsive(sm){
+            text-align: center;
+        }
     }
 }
 
@@ -109,6 +112,9 @@ body {
     @include responsive(sm) {
         font-size: 60px;
     }
+}
+a{
+    text-decoration: none;
 }
 
 .titulo_pages {
@@ -249,6 +255,7 @@ body {
    margin-bottom: 20px;
    width: 90%;
    margin: auto;
+   text-align: center;
 }
     a {
         color: $blanco;
@@ -304,6 +311,13 @@ body {
     padding-bottom: 4px;
 }
 
+.img-ser{
+    @include responsive(sm) {
+        width: 60%;
+        margin: auto;
+    } 
+}
+
 .form-contact {
     padding: 0 80px 0 0;
 
@@ -318,6 +332,10 @@ body {
 
     li {
         font-size: 20px;
+    }
+
+    @include responsive(sm){
+        text-align: center;
     }
 }
 

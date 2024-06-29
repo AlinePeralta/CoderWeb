@@ -29,6 +29,11 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+}
 
 .nav-item a:hover {
   color: #fff;
@@ -79,6 +84,10 @@ body {
   .titulo {
     font-size: 60px;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .titulo_pages {
@@ -233,6 +242,7 @@ body {
     margin-bottom: 20px;
     width: 90%;
     margin: auto;
+    text-align: center;
   }
 }
 .card a {
@@ -285,6 +295,13 @@ body {
   padding-bottom: 4px;
 }
 
+@media (max-width: 767.98px) {
+  .img-ser {
+    width: 60%;
+    margin: auto;
+  }
+}
+
 .form-contact {
   padding: 0 80px 0 0;
 }
@@ -300,6 +317,11 @@ body {
 }
 .datos_contacto li {
   font-size: 20px;
+}
+@media (max-width: 767.98px) {
+  .datos_contacto {
+    text-align: center;
+  }
 }
 
 .btn-large {
